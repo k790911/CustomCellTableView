@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomCellTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-5i-RDH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="countryCell" rowHeight="100" id="wXj-4s-E47" customClass="CountryTableViewCell" customModule="CustomCellTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wXj-4s-E47" id="jQ4-wl-chs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXG-jP-YeW">
+                                                    <rect key="frame" x="20" y="11" width="374" height="78"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile3" translatesAutoresizingMaskIntoConstraints="NO" id="hqe-pb-uF6">
+                                                            <rect key="frame" x="8" y="9" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="MtJ-xk-dPe"/>
+                                                                <constraint firstAttribute="height" constant="60" id="y2Q-ly-eok"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAP-w6-XFq">
+                                                            <rect key="frame" x="78" y="10" width="286" height="58"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="hqe-pb-uF6" firstAttribute="centerY" secondItem="VXG-jP-YeW" secondAttribute="centerY" id="TQb-hY-hCe"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DAP-w6-XFq" secondAttribute="bottom" constant="10" id="b18-IO-MyO"/>
+                                                        <constraint firstItem="DAP-w6-XFq" firstAttribute="leading" secondItem="hqe-pb-uF6" secondAttribute="trailing" constant="10" id="iiy-nI-1dc"/>
+                                                        <constraint firstItem="hqe-pb-uF6" firstAttribute="leading" secondItem="VXG-jP-YeW" secondAttribute="leading" constant="8" id="vAR-G2-Il8"/>
+                                                        <constraint firstItem="DAP-w6-XFq" firstAttribute="top" secondItem="VXG-jP-YeW" secondAttribute="top" constant="10" id="xRo-ey-bqt"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DAP-w6-XFq" secondAttribute="trailing" constant="10" id="yOb-8X-QVi"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VXG-jP-YeW" firstAttribute="bottom" secondItem="jQ4-wl-chs" secondAttribute="bottomMargin" id="CXI-IO-Y84"/>
+                                                <constraint firstItem="VXG-jP-YeW" firstAttribute="leading" secondItem="jQ4-wl-chs" secondAttribute="leadingMargin" id="KOC-JJ-uOB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VXG-jP-YeW" secondAttribute="trailing" id="gC6-VR-m6B"/>
+                                                <constraint firstItem="VXG-jP-YeW" firstAttribute="top" secondItem="jQ4-wl-chs" secondAttribute="topMargin" id="iQ8-fd-rSc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryImgView" destination="hqe-pb-uF6" id="fGn-Q0-A2z"/>
+                                            <outlet property="countryLbl" destination="DAP-w6-XFq" id="ULy-j2-2l1"/>
+                                            <outlet property="countryView" destination="VXG-jP-YeW" id="yBn-pF-Wlg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hwt-5i-RDH" secondAttribute="trailing" id="2NI-Jx-emN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hwt-5i-RDH" secondAttribute="bottom" id="7Bx-C8-Q7p"/>
+                            <constraint firstItem="hwt-5i-RDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L8B-G0-mDp"/>
+                            <constraint firstItem="hwt-5i-RDH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vn7-qq-9WA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryTableView" destination="hwt-5i-RDH" id="Aju-Ya-3gI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smile3" width="2048" height="2048"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
